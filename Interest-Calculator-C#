@@ -7,19 +7,19 @@ Interest = amount corresponding to the interest charged on the loan amount;
 */
 
 
-Console.WriteLine("Digite o valor do empréstimo (apenas números, em caso de vírgulas use um ponto no lugar):");
+Console.WriteLine("Enter the loan amount (numbers only):");
 
-string numValor = Console.ReadLine();
-float Valor = float.Parse(numValor);
+string numAmount = Console.ReadLine();
+float Amount = float.Parse(numAmount);
 
-Console.WriteLine($"Digite a taxa cobrada (apenas o percentual sem o símbolo %):");
+Console.WriteLine($"Enter the fee charged (only the percentage without the % symbol):");
 
-string numTaxa = Console.ReadLine();
-float Taxa = (float.Parse(numTaxa) / 100);
+string numFee = Console.ReadLine();
+float Fee = (float.Parse(numFee) / 100);
 
-Console.WriteLine($"Digite a quantidade de parcelas:");
+Console.WriteLine($"Enter the number of plots:");
 
-string numParcelas = Console.ReadLine();
-float Parcelas = float.Parse(numParcelas);
+string numPlots = Console.ReadLine();
+float Plots = float.Parse(numPlots);
 
-Console.WriteLine($"Juros = {(Taxa*Valor*Parcelas)}"); 
+Console.WriteLine($"Interest = {(Fee*Amount*Plots)}"); 

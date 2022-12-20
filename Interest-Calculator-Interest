@@ -1,0 +1,25 @@
+/*
+Interest Calculator
+Amount = loan amount;
+Fee = fee charged;
+Plots = number of plots;
+Interest = amount corresponding to the interest charged on the loan amount;
+*/
+
+
+Console.WriteLine("Digite o valor do empréstimo (apenas números, em caso de vírgulas use um ponto no lugar):");
+
+string numValor = Console.ReadLine();
+float Valor = float.Parse(numValor);
+
+Console.WriteLine($"Digite a taxa cobrada (apenas o percentual sem o símbolo %):");
+
+string numTaxa = Console.ReadLine();
+float Taxa = (float.Parse(numTaxa) / 100);
+
+Console.WriteLine($"Digite a quantidade de parcelas:");
+
+string numParcelas = Console.ReadLine();
+float Parcelas = float.Parse(numParcelas);
+
+Console.WriteLine($"Juros = {(Taxa*Valor*Parcelas)}"); 
